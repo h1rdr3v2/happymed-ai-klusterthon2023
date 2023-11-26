@@ -8,10 +8,7 @@ import cors from "cors";
 import cookieParser from "cookie-parser";
 
 // // Import routes
-// import walletRoutes from "./routes/walletRoutes.js";
-
-// //Import middleware
-// import authMiddleware from "./middleware/auth.js";
+import chatRoutes from "./routes/chatRoutes.js";
 
 // Create Express app
 const app = express();
@@ -22,9 +19,7 @@ app.use(cors());
 app.use(cookieParser());
 
 // Routes
-app.get("/", (req, res) => {
-	res.send("Hello World!");
-});
+app.use("/api", chatRoutes);
 
 // Error handling middleware
 app.use((req, res, next) => {

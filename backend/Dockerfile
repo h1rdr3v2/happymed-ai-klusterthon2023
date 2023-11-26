@@ -13,8 +13,8 @@ RUN npm install
 # Copy all source code
 COPY . .
 
-# Expose the port your Node.js app runs on (e.g., 3001)
-EXPOSE 3001
+# Expose the port your Node.js app runs on 
+EXPOSE 4000
 
 # Set the start command
 CMD ["npm", "start"]
