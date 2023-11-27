@@ -20,7 +20,7 @@ export const chat = async (req, res) => {
 			{
 				role: "system",
 				content:
-					"You are a medical symptoms  analyzer, here to help people understand there medical problems before meeting a doctor",
+					"You are a medical symptoms analyzer, here to help people understand there medical problems before meeting a doctor",
 			},
 			{
 				role: "user",
