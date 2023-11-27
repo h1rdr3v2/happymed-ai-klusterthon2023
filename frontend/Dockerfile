@@ -2,7 +2,7 @@
 FROM node:latest
 
 # Set working directory
-WORKDIR /usr/src/app
+WORKDIR /
 
 # Copy package.json and package-lock.json to workdir
 COPY package*.json ./
@@ -13,8 +13,8 @@ RUN npm install
 # Copy all source code
 COPY . .
 
-# Expose port 3000 (or the port your React app runs on)
-EXPOSE 3000
+# Expose port 3000 for the frontend
+EXPOSE 4173
 
 # Set the start command
-CMD ["npm", "start"]
+CMD ["npm", "run", "preview"]
