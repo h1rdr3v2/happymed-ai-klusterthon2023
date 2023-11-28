@@ -14,7 +14,7 @@ RUN npm install
 COPY . .
 
 # Expose port 3000 for the frontend
-EXPOSE 4173
+EXPOSE 3000
 
 # Set the start command
-CMD ["npm", "run", "preview"]
+CMD ["npm", "run", "start"]

@@ -5,7 +5,7 @@ services:
             context: ./frontend
             dockerfile: Dockerfile
         ports:
-            - "4173:4173" # Map container port 4173 to host port 4173
+            - "3000:3000" # Map container port 3000 to host port 3000
         depends_on:
             - backend # Ensure backend service is running before the frontend
 
