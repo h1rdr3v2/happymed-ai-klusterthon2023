@@ -1,47 +1,105 @@
-# STUTERTHON HACKATHON (Symptom Diagnosis)
+# HappyMed AI - Healthcare Assistant 🏥🤖
 
-## Description
+> An AI-powered healthcare assistant that helps users understand their symptoms and provides preliminary medical guidance.
 
-The Symptom Diagnosis Hackathon Project is a web application that helps users identify potential health issues based on their symptoms. By inputting their symptoms into the application, users will receive a list of possible diagnoses along with recommendations to consult a doctor for further evaluation.
+**Built for Klusterthon 2023 Hackathon by Stutern**
 
-## Installation
+## ⚠️ Project Status
+This project is no longer actively maintained. It was developed during the Klusterthon 2023 hackathon and serves as a proof of concept for AI-assisted healthcare consultation.
 
-1. Clone the repository.
-2. Navigate to the project folder and run `npm install` to install dependencies.
+## 🚀 Overview
 
-## Usage
+HappyMed AI is an intelligent healthcare assistant that leverages OpenAI's GPT technology to analyze user symptoms and provide helpful medical information. The application aims to make healthcare more accessible by offering preliminary symptom analysis and guidance.
 
-1. Start the frontend development server:
-    ```bash
-    cd frontend
-    npm start
-    ```
+## 👥 Team
 
-2. Start the backend server:
-    ```bash
-    cd backend
-    npm start
-    ```
+- **Developer**: Destiny Ezenwata - Full Stack Development
+- **UI/UX Designer**: Chidimma Ugwu - User Interface & Experience Design
 
-## Docker
+## 🛠️ Tech Stack
 
-To run the project using Docker, follow these steps:
+- **Frontend**: React.js
+- **Backend**: PHP Slim Framework
+- **AI Integration**: OpenAI GPT API
+- **Containerization**: Docker & Docker Compose
+- **Deployment**: Self-hosted
 
-1. Edit the `docker-compose.yml` file to set the `OPENAI_API_KEY` environment variable to the URL of the backend server.
+## 📁 Project Structure
 
-2. Run the Docker container using Docker Compose:
-    ```bash
-    docker-compose up
-    ```
+```
+happymed-ai-klusterthon2023/
+├── frontend/          # React.js application
+├── backend/           # PHP Slim API
+├── docker-compose.yml # Container orchestration
+└── README.md
+```
 
-The frontend will be accessible at `http://localhost:4173` and the backend will be accessible at `http://localhost:3001`.
-You can change the port numbers in the `docker-compose.yml` file.
+## ✨ Features
 
-## Technologies Used
+- **Symptom Analysis**: Users can input their symptoms and receive AI-powered analysis
+- **Medical Guidance**: Provides preliminary medical information and recommendations
+- **User-Friendly Interface**: Clean and intuitive design for easy navigation
+- **Responsive Design**: Works across different devices and screen sizes
 
-- Frontend: React.js
-- Backend: Node.js, Express.js
+## 🚀 Getting Started
 
-## License
+### Prerequisites
+- Docker and Docker Compose installed
+- OpenAI API key
 
-This project is licensed under the [MIT License](LICENSE).
+### Installation
+
+1. Clone the repository
+```bash
+git clone https://github.com/[your-username]/happymed-ai-klusterthon2023.git
+cd happymed-ai-klusterthon2023
+```
+
+2. Set up environment variables (Update in docker-compose.yml)
+```bash
+# Add your OpenAI API key to the backend configuration
+OPENAI_API_KEY=api-key
+```
+
+3. Run with Docker Compose
+```bash
+docker-compose up -d
+```
+
+4. Access the application
+- Frontend: `http://localhost:3000`
+- Backend API: `http://localhost:8000`
+
+## 🎯 Hackathon Context
+
+This project was developed during the **Klusterthon 2023** hackathon organized by **Stutern**. Due to time constraints during the hackathon, we focused on core functionality with plans to expand features like appointment booking and medication reminders in future iterations.
+
+## ⚡ Future Enhancements (Planned)
+
+- Appointment booking system
+- Medication reminders
+- Doctor recommendations
+- Medical history tracking
+- Integration with healthcare providers
+
+## 📝 Disclaimer
+
+**Important**: This application is for educational and informational purposes only. It should not be used as a substitute for professional medical advice, diagnosis, or treatment. Always consult with qualified healthcare professionals for medical concerns.
+
+## 🏆 Hackathon Experience
+
+Participating in Klusterthon 2023 was an incredible learning experience. Working under time pressure taught us to prioritize features effectively and deliver a functional MVP within the hackathon timeframe.
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🤝 Acknowledgments
+
+- **Stutern** for organizing the Klusterthon 2023 hackathon
+- **OpenAI** for providing the GPT API
+- All fellow participants who made the hackathon a memorable experience
+
+---
+
+*Built with ❤️ during Klusterthon 2023*
